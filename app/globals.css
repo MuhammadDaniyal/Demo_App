@@ -26,11 +26,63 @@
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid #cb0532;
   padding: 13px;
   transition: all 0.2s linear;
   background: #cb0532;
   color: #fff;
-  border-color: #cb0532;
   margin-top: 15px !important;
+}
+
+/* EXPERTISE */
+
+.expertise {
+  width: 100%;
+  background-image: url("/expertise_bg.jpeg");
+  height: auto;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 66px;
+  flex-direction: column;
+}
+
+.expertise-card {
+  transition: all 0.3s linear;
+}
+
+.expertise-img {
+  position: absolute;
+  z-index: 9999;
+  top: -16%;
+  border: 7px solid white;
+  border-radius: 10px;
+  left: 6%;
+  height: 100px;
+  color: white;
+}
+
+.expertise-card-action {
+  position: absolute;
+  opacity: 0;
+  top: 100%;
+  left: 0;
+  height: 0%;
+  transition: all 0.5s linear;
+  border: 7px solid #fff;
+  /* right: 1px; */
+}
+
+.expertise-card:hover.expertise-card .expertise-card-action {
+  top: 0%;
+  opacity: 1;
+  height: 100%;
+  color: #fff;
+  background-color: #000;
 }
