@@ -66,9 +66,9 @@ const Navbar = () => {
             />
           </div>
           {/* MENU */}
-          <div className=" flex flex-col text-[21px] font-semibold text-white gap-2">
+          <div className=" flex flex-col text-[21px] font-semibold text-white gap-2 side_links">
             {links.map((item) => (
-              <Link
+              <Link className="side_bar_a"
                 href={item.url}
                 key={item.id}
                 onClick={() => setOpenMenu(false)}

@@ -5,6 +5,7 @@
 .nav_open_icon {
   color: #fff;
   font-size: 38px;
+  
 }
 .nav_open_icon_red {
   color: #cb0532;
@@ -32,6 +33,22 @@
   background: #17252d;
   transition: all .5s;
 }
+
+.side_links{
+  transition: all .3s;
+    letter-spacing: 1.8px;
+    transition: all .5s;
+}
+
+.side_bar_a{
+  transition: all .5s;
+}
+
+.side_bar_a:hover{
+  border-left:3px solid red ;
+  padding-left: 16px;
+}
+
 
 /* MAIN */
 
