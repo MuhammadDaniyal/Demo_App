@@ -84,7 +84,7 @@ const Navbar = () => {
             className="side_bar_btn"
             onClick={() => setOpenMenu(false)}
           >
-            LET'S CONNECT
+            LET’S CONNECT
           </Link>
         </div>
       </div>
