@@ -22,7 +22,7 @@
   font-size: 17px;
 }
 
-.right-box{
+.right-box {
   padding: 0 28px;
 }
 
@@ -40,16 +40,16 @@
 }
 
 
-.left-box-h2{
+.left-box-h2 {
   color: #CB0532;
-    letter-spacing: -1px;
-    text-transform: capitalize;
-    font-size: 50px;
-    padding-bottom: 15px;
-    position: relative;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  font-size: 50px;
+  padding-bottom: 15px;
+  position: relative;
 }
 
-.left-box-span{
+.left-box-span {
   width: 19%;
   height: 8px;
   border-radius: 15px;
@@ -58,29 +58,70 @@
   margin-top: 4%;
 }
 
-
-.right-box-h2{
+.right-box-h2 {
   color: #000;
   font-weight: 700;
-    font-size: 40px;
-    letter-spacing: -1px;
-    margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
 }
 
-.right-box-p{
+.right-box-p {
   font-size: 19px;
-    color: #000;
-    text-align: justify;
-    margin-bottom: 40px;
+  color: #000;
+  text-align: justify;
+  margin-bottom: 40px;
 }
 
-.about_link{
+.about_link {
   font-size: 15px;
-    color: #000;
-    padding: 13px;
-    text-transform: uppercase;
-    border: 1px solid #000;
-    margin-bottom: 10px;
-    transition: all .3s linear;
-    overflow-x: hidden;
+  color: #000;
+  padding: 13px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  transition: all .3s linear;
+  overflow-x: hidden;
+}
+
+
+
+@media (max-width: 798px) {
+  .main_div{
+    height: 30rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .main_h2{
+    font-size: 25px;
+  }
+  .main_p{
+    font-size: 16px;
+  }
+  .left-box-h2{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .left-box-span{
+    margin: 0 auto;
+  }
+
+  .right-box-h2{
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .right-box-p{
+    font-size: 14px;
+  }
+
+  .about_link{
+    padding: 10px 10px;
+    font-size: 15px;
+    background: #CB0532;
+    border-color: #CB0532;
+    color: #fff;
+  }
+
 }
