@@ -18,9 +18,9 @@ const Expertise = () => {
         </div>
         {/* RIGHT SIDE CARDS */}
         <div className=" flex h-[340px] flex-col lg:flex-row gap-3 w-3/4 justify-center items-center">
-          {ExpertiseData.map((experty) => (
+          {ExpertiseData.map((experty,i) => (
             // {/* SINGLE CARD */}
-            <div className=" relative flex-1 h-full bg-white expertise-card cursor-pointer">
+            <div key={i} className=" relative flex-1 h-full bg-white expertise-card cursor-pointer">
               <Image
                 src={experty.img!}
                 alt={experty.img!}

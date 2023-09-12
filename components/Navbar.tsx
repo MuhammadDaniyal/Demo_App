@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className=" relative w-[7.5rem] h-12 cursor-pointer">
         <Image
           src={`${isVisible ? "/logo-red.png" : "/logo-white.png"}`}
-          alt=""
+          alt="aaa"
           fill
         />
       </div>

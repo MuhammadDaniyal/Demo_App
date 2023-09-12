@@ -18,8 +18,8 @@ const Categories = () => {
           </p>
         </div>
         <div className="flex flex-wrap">
-          {category.map((item) => (
-            <div className="w-full h-[340px] odd:border-r odd:border-b even:border-b border-[#d1cdcd] sm:w-1/2 lg:w-1/2 flex flex-col group category-card py-8 px-16 gap-2">
+          {category.map((item,i) => (
+            <div key={i} className="w-full h-[340px] odd:border-r odd:border-b even:border-b border-[#d1cdcd] sm:w-1/2 lg:w-1/2 flex flex-col group category-card py-8 px-16 gap-2">
               {/* TEXT CONTAINER */}
               <h3 className=" w-[80%] text-[40px] text-[#CB0532] font-bold tracking-[-1px] category-card-h3">
                 {item.title}
