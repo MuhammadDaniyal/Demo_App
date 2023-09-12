@@ -6,6 +6,34 @@
   color: #fff;
   font-size: 38px;
 }
+.nav_open_icon_red {
+  color: #cb0532;
+  font-size: 38px;
+}
+
+.nav_close_icon{
+  color: #fff;
+  font-size: 38px;
+}
+
+.header-nav {
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.scroll-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeced;
+}
+
+/* SIDEBAR */
+.menu {
+  padding: 48px 48px 20px 58px;
+  background: #17252d;
+  transition: all .5s;
+}
+
+/* MAIN */
 
 .main_div {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -20,6 +48,10 @@
 .main_p {
   color: #fff !important;
   font-size: 17px;
+}
+
+.right-box {
+  padding: 0 28px;
 }
 
 .main_link {
@@ -89,13 +121,6 @@
 
 /* CATEGORIES */
 
-.category-h2 {
-  color: #cb0532;
-  letter-spacing: -1px;
-  text-transform: capitalize;
-  font-size: 50px;
-}
-
 .category-span {
   width: 10%;
   height: 8px;
@@ -136,4 +161,97 @@
   display: block;
   transition: all 0.3s linear;
   opacity: 1;
+}
+
+/* ABOUT */
+
+.left-box-h2 {
+  color: #cb0532;
+  letter-spacing: -1px;
+  text-transform: capitalize;
+  font-size: 50px;
+  padding-bottom: 15px;
+  position: relative;
+  line-height: 60px;
+}
+
+.left-box-span {
+  width: 15%;
+  height: 8px;
+  border-radius: 15px;
+  background: #7d7e7e;
+  display: block;
+}
+
+.right-box-h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 38px;
+  letter-spacing: -1px;
+  line-height: 50px;
+}
+
+.right-box-p {
+  text-align: justify;
+  font-size: 19px;
+  color: #434343;
+}
+
+.right-box-p strong {
+  font-weight: 500;
+}
+
+.about_link {
+  font-size: 15px;
+  color: #000;
+  padding: 12px 7px;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  transition: all 0.3s linear;
+  text-align: center;
+  width: 60%;
+}
+.about_link:hover {
+  transition: all 0.3s linear;
+  color: #fff;
+  background: #cb0532;
+}
+
+@media (max-width: 798px) {
+  .main_div {
+    height: 30rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .main_h2 {
+    font-size: 25px;
+  }
+  .main_p {
+    font-size: 16px;
+  }
+  .left-box-h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .left-box-span {
+    margin: 0 auto;
+  }
+
+  .right-box-h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .right-box-p {
+    font-size: 14px;
+  }
+
+  .about_link {
+    padding: 10px 10px;
+    font-size: 15px;
+    background: #cb0532;
+    border-color: #cb0532;
+    color: #fff;
+  }
 }
