@@ -1,139 +1,31 @@
-type Product = {
-  id: number;
+type Category = {
   title: string;
   desc?: string;
-  img?: string;
-  price: number;
-  options?: { title: string; additionalPrice: number }[];
 };
 
-type Products = Product[];
-
-export const pizzas: Products = [
+export const category: Category[] = [
   {
-    id: 1,
-    title: "Sicilian",
-    desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella cheese, delivering a kick with every bite.",
-    img: "/temporary/p1.png",
-    price: 24.9,
-    options: [
-      {
-        title: "Small",
-        additionalPrice: 0,
-      },
-      {
-        title: "Medium",
-        additionalPrice: 4,
-      },
-      {
-        title: "Large",
-        additionalPrice: 6,
-      },
-    ],
+    title: "E-Commerce Applications",
+    desc: "From Retail and Wholesale,Online Shopping,Mobile and Web Applications,Online Booking etc we offer business solutions to all kinds of e-commerce needs may it be B2B or B2C businesses.",
   },
   {
-    id: 2,
-    title: "Mediterranean Delight",
-    desc: "Embark on a culinary journey with this Mediterranean-inspired creation, featuring zesty feta cheese, Kalamata olives, sun-dried tomatoes, and a sprinkle of oregano.",
-    img: "/temporary/p8.png",
-    price: 32.9,
-    options: [
-      {
-        title: "Small",
-        additionalPrice: 0,
-      },
-      {
-        title: "Medium",
-        additionalPrice: 4,
-      },
-      {
-        title: "Large",
-        additionalPrice: 6,
-      },
-    ],
+    title: "Delivery Management System",
+    desc: "From Retail and Wholesale,Online Shopping,Mobile and Web Applications,Online Booking etc we offer business solutions to all kinds of e-commerce needs may it be B2B or B2C businesses.",
   },
   {
-    id: 3,
-    title: "Bella Napoli",
-    desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-    img: "/temporary/p3.png",
-    price: 26.9,
-    options: [
-      {
-        title: "Small",
-        additionalPrice: 0,
-      },
-      {
-        title: "Medium",
-        additionalPrice: 4,
-      },
-      {
-        title: "Large",
-        additionalPrice: 6,
-      },
-    ],
+    title: "Multi Level Marketing & Strategy",
+    desc: "From Retail and Wholesale,Online Shopping,Mobile and Web Applications,Online Booking etc we offer business solutions to all kinds of e-commerce needs may it be B2B or B2C businesses.",
   },
   {
-    id: 4,
-    title: "Pesto Primavera",
-    desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-    img: "/temporary/p10.png",
-    price: 28.9,
-    options: [
-      {
-        title: "Small",
-        additionalPrice: 0,
-      },
-      {
-        title: "Medium",
-        additionalPrice: 4,
-      },
-      {
-        title: "Large",
-        additionalPrice: 6,
-      },
-    ],
+    title: "Stock & Billing System",
+    desc: "From Retail and Wholesale,Online Shopping,Mobile and Web Applications,Online Booking etc we offer business solutions to all kinds of e-commerce needs may it be B2B or B2C businesses.",
   },
   {
-    id: 5,
-    title: "Veggie Supreme",
-    desc: "A classic Italian delight featuring a thin, crispy crust, tangy tomato sauce, fresh mozzarella, and a medley of aromatic herbs topped with lettuce, tomatoes, and a dollop of tangy mayo.",
-    img: "/temporary/p11.png",
-    price: 24.9,
-    options: [
-      {
-        title: "Small",
-        additionalPrice: 0,
-      },
-      {
-        title: "Medium",
-        additionalPrice: 4,
-      },
-      {
-        title: "Large",
-        additionalPrice: 6,
-      },
-    ],
+    title: "Consumer Brands & FMCG",
+    desc: "From Retail and Wholesale,Online Shopping,Mobile and Web Applications,Online Booking etc we offer business solutions to all kinds of e-commerce needs may it be B2B or B2C businesses.",
   },
   {
-    id: 6,
-    title: "Four Cheese Fantasy",
-    desc: "Experience pure cheesy bliss with a melty blend of mozzarella, cheddar, provolone, and Parmesan cheeses, creating a rich and indulgent pizza experience.",
-    img: "/temporary/p12.png",
-    price: 22.9,
-    options: [
-      {
-        title: "Small",
-        additionalPrice: 0,
-      },
-      {
-        title: "Medium",
-        additionalPrice: 4,
-      },
-      {
-        title: "Large",
-        additionalPrice: 6,
-      },
-    ],
+    title: "Manufacturing & Export Firms",
+    desc: "From Retail and Wholesale,Online Shopping,Mobile and Web Applications,Online Booking etc we offer business solutions to all kinds of e-commerce needs may it be B2B or B2C businesses.",
   },
 ];

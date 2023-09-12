@@ -6,10 +6,15 @@ import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 
 const links = [
-  { id: 1, title: "Homepage", url: "/" },
-  { id: 2, title: "Menu", url: "/menu" },
-  { id: 3, title: "Working Hours", url: "/" },
-  { id: 4, title: "Contact", url: "/" },
+  { id: 1, title: "Home", url: "/" },
+  { id: 2, title: "About Agency", url: "/" },
+  { id: 3, title: "Branding", url: "/" },
+  { id: 4, title: "Development", url: "/" },
+  { id: 5, title: "Marketing", url: "/" },
+  { id: 4, title: "Our Blogs", url: "/" },
+  { id: 4, title: "Our Works", url: "/" },
+  { id: 4, title: "Partnership", url: "/" },
+  { id: 4, title: "Contact Us", url: "/" },
 ];
 
 const Navbar = () => {
@@ -37,7 +42,7 @@ const Navbar = () => {
       className={`fixed w-full h-20 flex justify-between items-center pt-4 pb-2 lg:px-16 xl:px-32 z-[9999] 
     ${isVisible ? "header-nav scroll-header" : "header-nav "}`}
     >
-      <div className=" relative w-[7.5rem] h-14 cursor-pointer">
+      <div className=" relative w-[7.5rem] h-12 cursor-pointer">
         <Image
           src={`${isVisible ? "/logo-red.png" : "/logo-white.png"}`}
           alt=""
@@ -51,11 +56,7 @@ const Navbar = () => {
         onClick={() => setOpenMenu(true)}
       />
       {/* SIDEBAR */}
-      <div
-        className={` absolute top-0 right-0 h-screen w-1/3 menu ${
-          OpenMenu ? "" : "hidden"
-        }`}
-      >
+      <div className={` h-screen menu ${OpenMenu ? "" : "hidden"}`}>
         {/* SIDEBAR ALAG COMPONENT */}
         <div className=" flex flex-col gap-6">
           {/* ICON */}
@@ -66,9 +67,10 @@ const Navbar = () => {
             />
           </div>
           {/* MENU */}
-          <div className=" flex flex-col text-[21px] font-semibold text-white gap-2 side_links">
+          <div className=" flex flex-col text-[21px] font-semibold text-white gap-[10px] side_links">
             {links.map((item) => (
-              <Link className="side_bar_a"
+              <Link
+                className="side_bar_a"
                 href={item.url}
                 key={item.id}
                 onClick={() => setOpenMenu(false)}
@@ -77,6 +79,13 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
+          <Link
+            href={"/"}
+            className="side_bar_btn"
+            onClick={() => setOpenMenu(false)}
+          >
+            LET'S CONNECT
+          </Link>
         </div>
       </div>
     </nav>

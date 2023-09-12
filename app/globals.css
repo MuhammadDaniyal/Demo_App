@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* NAVBAR */
 .nav_open_icon {
   color: #fff;
   font-size: 38px;
-  
 }
 .nav_open_icon_red {
   color: #cb0532;
   font-size: 38px;
 }
 
-.nav_close_icon{
+.nav_close_icon {
   color: #fff;
   font-size: 38px;
 }
@@ -29,26 +29,52 @@
 
 /* SIDEBAR */
 .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 48px 48px 20px 58px;
   background: #17252d;
-  transition: all .5s;
+  width: 34%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 
-.side_links{
-  transition: all .3s;
-    letter-spacing: 1.8px;
-    transition: all .5s;
+.side_bar_a {
+  position: relative;
+  transition: all 0.3s;
+  letter-spacing: 1.8px;
 }
-
-.side_bar_a{
-  transition: all .5s;
-}
-
-.side_bar_a:hover{
-  border-left:3px solid red ;
+.side_bar_a:hover {
   padding-left: 16px;
 }
 
+.side_bar_a::before {
+  opacity: 0;
+  content: "";
+  background: #f14841;
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.side_bar_a:hover::before {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease;
+}
+
+.side_bar_btn {
+  width: 50%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  padding: 12px 7px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  text-align: center;
+}
 
 /* MAIN */
 
